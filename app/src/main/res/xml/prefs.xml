@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="name"
+        android:summary="Enter your name"
+        android:title="Name"/>
+
+    <CheckBoxPreference
+        android:key="remember_name"
+        android:summary="Do you want to remember the name?"
+        android:title="Remember Name On Startup?"
+    />
+
+    <EditTextPreference
+        android:key="email"
+        android:summary="Your email address"
+        android:title="Email" />
+
+    <EditTextPreference
+        android:key="sms"
+        android:summary="Your phone number"
+        android:title="SMS" />
+
+    <ListPreference
+        android:entries="@array/gender_type"
+        android:entryValues="@array/gender_values"
+        android:key="gender"
+        android:summary="Select your gender"
+        android:title="Your Gender" />
+
+</PreferenceScreen>
